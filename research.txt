@@ -1,0 +1,45 @@
+Container properties:
+
+    flex-direction
+
+    justify-content
+
+    align-items
+
+-----
+
+Item properties:
+
+    order
+
+    flex
+
+-----
+
+Pseudo-classes:
+
+    :hover
+    
+    :not(selector)
+
+    :nth-child(n)
+
+-----
+
+I didn't know where to put this one
+
+    transition
+
+-----
+
+Resources:
+
+https://www.w3schools.com/css/css3_flexbox_container.asp
+
+https://www.w3schools.com/css/css3_flexbox_items.asp
+
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+https://www.w3schools.com/cssref/sel_nth-child.php
+
+https://www.w3schools.com/css/css3_transitions.asp
