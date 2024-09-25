@@ -1,3 +1,5 @@
+/*All pseudo-class explanations only appear with the first instance of that pseudo-class*/
+
 nav
 {
     background-color: rgb(170, 240, 195);
@@ -23,13 +25,13 @@ p
 }
 
 
-a:hover
+a:hover /*Only occurs when the mouse is over the <a>*/
 {
     background-color: rgb(35, 35, 35);
     color: rgb(255, 255, 255);
 }
 
-li:nth-child(odd)
+li:nth-child(odd) /*Selects every odd <li>*/
 {
     background-color: rgb(127, 127, 127);
 }
@@ -43,39 +45,50 @@ li:nth-child(odd)
 
     margin: .5% 0%;
 
-    display: flex;
+    display: flex; /*Sets as a flex container*/
 
+    /*Direction flex items are displayed*/
     /*flex-direction: column;
     flex-direction: column-reverse;
     flex-direction: row-reverse;*/
 
-    /*justify-content: center;
-    justify-content: flex-start;
+    /*Determines side-to-side position of flex items*/
+    /*justify-content: center;*/
     justify-content: flex-end;
-    justify-content: space-around;
+    /*justify-content: space-around;
     justify-content: space-between;*/
 
+    /*Determines top-to-bottom position of flex items*/
     /*align-items: center;
-    align-items: flex-start;
+    align-items: flex-start;*/
     align-items: flex-end;
-    align-items: baseline;*/
+    /*align-items: baseline;*/
 }
 
-.container > div:not(#box)
+.container > div:not(#box) /*All <div> elements except #box*/
 {
     height: 100px;
-    margin: 5px;
+    margin: 15px 5px;
 
-    flex: 1;
+    flex: 1; /*How much space the item takes up compared to the other flex items*/
+    transition: .2s; /*Amount of time it takes to transition*/
 }
 
-.container > div:hover
+.container:not(#second) > div:hover
 {
     background-color: rgb(115, 85, 110);
     color: rgb(255, 255, 255);
 
     flex: 2;
     transition: .2s;
+}
+
+.container:not(#second) > div:active /*Only occurs when the <div> is clicked*/
+{
+    background-color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 110%;
+    transition: 0s;
 }
 
 #second
@@ -93,9 +106,15 @@ li:nth-child(odd)
     width: 200px;
 }
 
+div:first-child /*Selects every <div> that is the first child of its parent*/
+{
+    border: solid rgb(110, 20, 230) 2px;
+    border-radius: 10px;
+}
+
 #one
 {
-    order: 3;
+    order: 3; /*Specifies what order to display the item*/
 }
 
 #two

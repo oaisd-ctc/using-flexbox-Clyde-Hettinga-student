@@ -1,45 +1,69 @@
 Container properties:
 
-    flex-direction
+    flex-direction determines what direction the flex items are displayed
+        column stacks them vertically top-to-bottom
+        column-reverse stacks them vertically bottom-to-top
+        row (not listed in the code) stacks them horizontally left-to-right
+        row-reverse stacks them horizontally right-to-left
 
-    justify-content
+    justify-content aligns flex items horizontally
+        center aligns them at the center of the container
+        flex-start (not listed in the code) aligns them at the start of the container
+        flex-end aligns them at the end of the container
+        space-around displays them with space before, between, and after the lines
+        space-between displays them with space between the lines
 
-    align-items
+    align-items aligns flex items vertically
+        center aligns them in the middle of the container
+        flex-start aligns them at the top of the container
+        flex-end aligns them at the bottom of the container
+        stretch (not listed in the code) stretches them to fill the container
+        baseline aligns them so that their text baselines align
 
 -----
 
 Item properties:
 
-    order
+    order specifies what order to display a flex item and requires a number value
 
-    flex
+    flex is shorthand for flex-grow, flex-shrink, and flex-basis, all of which determine the item's length
 
 -----
 
 Pseudo-classes:
 
-    :hover
-    
-    :not(selector)
+    :active styles an element (not just links!) only when it's clicked
 
-    :nth-child(n)
+    :first-child selects every one of that element that is the first child of its parent
+    
+    :hover styles an element only when the mouse is overtop it
+    
+    :not(selector) selects every one of that element except for the one in the parentheses
+
+    :nth-child(n) selects every element that is the nth child of its parent
+        n can a number, keyword (odd/even) or formula (e.g. an + b)
 
 -----
 
-I didn't know where to put this one
+I didn't know where to put this one, so here it is by itself
 
-    transition
+    transition is another shorthand property, combining transition-property, transition-duration, transition-timing-function, and transition-delay
+        I only specified the transition-duration part of this property
 
 -----
 
 Resources:
 
-https://www.w3schools.com/css/css3_flexbox_container.asp
+    https://www.w3schools.com/css/css3_flexbox_container.asp
 
-https://www.w3schools.com/css/css3_flexbox_items.asp
+    https://www.w3schools.com/css/css3_flexbox_items.asp
 
-https://www.w3schools.com/css/css_pseudo_classes.asp
+    https://www.w3schools.com/css/css_pseudo_classes.asp
 
-https://www.w3schools.com/cssref/sel_nth-child.php
+    https://www.w3schools.com/cssref/sel_nth-child.php
 
-https://www.w3schools.com/css/css3_transitions.asp
+    https://www.w3schools.com/cssref/sel_not.php
+
+    https://www.w3schools.com/css/css3_transitions.asp
+
+    https://stackoverflow.com/questions/7915142/will-css-active-work-on-a-non-link-element
